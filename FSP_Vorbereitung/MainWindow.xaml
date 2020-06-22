@@ -1,0 +1,39 @@
+﻿<Window x:Class="FSP_Vorbereitung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSP_Vorbereitung"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Aufgabe 1">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="String umkehren:" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Eingabe:" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Ausgabe:" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBlock x:Name="TB_Ausgabe" HorizontalAlignment="Left" Margin="80,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="21" FontSize="16"/>
+                    <TextBox x:Name="TB_Eingabe" HorizontalAlignment="Left" Height="22" Margin="80,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="BT_Umkehren" Content="Umkehren" HorizontalAlignment="Left" Margin="93,102,0,0" VerticalAlignment="Top" Width="75" Click="BT_Umkehren_Click"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="316,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"><Run Text="Verflixte"/><Run Text=" &quot;7&quot;"/><Run Text=" :"/></TextBlock>
+                    <Button x:Name="BT_rnd" Content="Nächste Zahl" HorizontalAlignment="Left" Margin="316,57,0,0" VerticalAlignment="Top" Width="81" Click="BT_rnd_Click"/>
+                    <TextBlock x:Name="TB_zahl" HorizontalAlignment="Left" Margin="411,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" Height="194" FontSize="16"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="107" Width="226"><Run Text="Nach Eingabe ein"/><Run Text="er Zeichenkette soll diese auf Knopfdruck umgekehrt im Ausgabefeld erscheinen."/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="316,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="115" Width="226" Text="Auf Knopfdruck soll in dem Textfeld, bei 1 beginnend, jeweils die nachfolgende Zahl erscheinen. Dabei sollen alle Vielfachen von 7 und alle Zahlen die eine Ziffer 7 enthalten, hervorgehoben werden."/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 2">
+                <Grid>
+                    <Canvas x:Name="Zeichenfläche" Margin="0,0,400,0"/>
+                    <Button x:Name="BTN_Start" Content="Start" HorizontalAlignment="Left" Margin="405,28,0,0" VerticalAlignment="Top" Width="116" Click="BTN_Start_Click"/>
+                    <Button x:Name="BTN_New" Content="Körper hinzufügen" HorizontalAlignment="Left" Margin="405,90,0,0" VerticalAlignment="Top" Width="116" IsEnabled="False" Click="BTN_New_Click"/>
+                    <Button x:Name="BTN_rem" Content="Körper entfernen" HorizontalAlignment="Left" Margin="405,150,0,0" VerticalAlignment="Top" Width="116" IsEnabled="False" Click="BTN_rem_Click"/>
+                    <Button x:Name="BTN_Pause" Content="Pause" HorizontalAlignment="Left" Margin="405,210,0,0" VerticalAlignment="Top" Width="116" Click="BTN_Pause_Click"/>
+                    <TextBlock Text="Nach betätigen des Start-Button sollen zwanzig magentafarbene Kreise zufällig auf dem Canvas verteilt erzeugt werden. DIese sollen eine zufällige Geschwindigkeit zwischen -50 un 50 pro Komponente erhalten und sich unter periodischen Randbedingungen auf dem Canvas bewegen. Die wieteren Buttons sollen tun was auf ihnen steht."  HorizontalAlignment="Left" Margin="570,25,0,0" VerticalAlignment="Top" Height="312" Width="194" TextWrapping="Wrap"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
