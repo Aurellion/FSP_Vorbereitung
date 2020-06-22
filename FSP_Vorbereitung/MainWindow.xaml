@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FSP_Vorbereitung"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
+        Title="FSP Vorbereitung" Height="450" Width="800" KeyDown="Window_KeyDown">
     <Grid>
         <TabControl>
             <TabItem Header="Aufgabe 1">
@@ -31,7 +31,7 @@
                     <Button x:Name="BTN_New" Content="Körper hinzufügen" HorizontalAlignment="Left" Margin="405,90,0,0" VerticalAlignment="Top" Width="116" IsEnabled="False" Click="BTN_New_Click"/>
                     <Button x:Name="BTN_rem" Content="Körper entfernen" HorizontalAlignment="Left" Margin="405,150,0,0" VerticalAlignment="Top" Width="116" IsEnabled="False" Click="BTN_rem_Click"/>
                     <Button x:Name="BTN_Pause" Content="Pause" HorizontalAlignment="Left" Margin="405,210,0,0" VerticalAlignment="Top" Width="116" Click="BTN_Pause_Click"/>
-                    <TextBlock Text="Nach betätigen des Start-Button sollen zwanzig magentafarbene Kreise zufällig auf dem Canvas verteilt erzeugt werden. DIese sollen eine zufällige Geschwindigkeit zwischen -50 un 50 pro Komponente erhalten und sich unter periodischen Randbedingungen auf dem Canvas bewegen. Die wieteren Buttons sollen tun was auf ihnen steht."  HorizontalAlignment="Left" Margin="570,25,0,0" VerticalAlignment="Top" Height="312" Width="194" TextWrapping="Wrap"/>
+                    <TextBlock Text="Nach betätigen des Start-Button sollen zwanzig magentafarbene Körper zufällig auf dem Canvas verteilt erzeugt werden. DIese sollen eine zufällige Geschwindigkeit zwischen -50 un 50 pro Komponente erhalten und sich unter periodischen Randbedingungen auf dem Canvas bewegen. Das Verhalten der weiteren Buttons soll selbstständig nachempfunden werden. Des Weiteren soll sich die Geschwindigkeit der Körper mit den Pfeiltasten Up und Down regulieren lassen."  HorizontalAlignment="Left" Margin="570,25,0,0" VerticalAlignment="Top" Height="312" Width="194" TextWrapping="Wrap"/>
                 </Grid>
             </TabItem>
         </TabControl>
